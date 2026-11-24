@@ -18,11 +18,13 @@ Made by **Geckomacabre**. Version 2.6 adds GTA VI's character switcher, heists a
 > ### 💬 Need help? Join our support Discord
 > **[discord.gg/geckomacabre](https://discord.gg/geckomacabre)**, or a [GitHub issue](https://github.com/Geckomacabre/GTA-VI-Inspired-HUD/issues).
 
-> [!WARNING]
-> ### 🌐 English only
-> The HUD is made and tested with GTA V set to **English**, and English is the only language we support.
-> In other languages some text can show up as empty boxes, and switching characters has been reported to crash.
-> Please set GTA V's language to **English** in your game launcher's settings for GTA V before you play.
+> [!TIP]
+> ### 🌐 Language support
+> The HUD includes translations for **Russian**, French, German, Italian, Spanish (Spain and Mexico), Brazilian Portuguese,
+> Polish, Korean, Japanese, and Simplified and Traditional Chinese. Set GTA V to Russian and leave
+> `scripts\GTA6Hud.ini` → `[Language]` → `Use = Auto` to follow the game's language.
+> If GTA V is set to English but you want the HUD in Russian, change that line to `Use = ru`.
+> Text that has no translation yet stays in English. Cyrillic is drawn with the game's own font.
 
 > [!TIP]
 > ## 🔄 Updating? Just one file
