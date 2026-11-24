@@ -22,7 +22,7 @@ Made by **Geckomacabre**. Version 2.6 adds GTA VI's character switcher, heists a
 > ### 🌐 Language support
 > The HUD includes translations for **Russian**, French, German, Italian, Spanish (Spain and Mexico), Brazilian Portuguese,
 > Polish, Korean, Japanese, and Simplified and Traditional Chinese. Set GTA V to Russian and leave
-> `scripts\\GTA6Hud.ini` → `[Language]` → `Use = Auto` to follow the game's language.
+> `scripts\GTA6Hud.ini` → `[Language]` → `Use = Auto` to follow the game's language.
 > If GTA V is set to English but you want the HUD in Russian, change that line to `Use = ru`.
 > Text that has no translation yet stays in English. Cyrillic is drawn with the game's own font.
 
