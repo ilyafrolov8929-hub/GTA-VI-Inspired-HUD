@@ -32,6 +32,10 @@ namespace ViExtras
         {
             Paths.Init(this);
             if (HasPostTicker()) return;
+            // The queue only needs to be drained promptly, not once per rendered frame.
+            // A 100 ms interval keeps notification latency imperceptible while avoiding
+            // a needless per-frame script tick on SHVDN builds without PostTicker.
+            Interval = 100;
             Tick += OnTick;
         }
 
@@ -43,7 +47,12 @@ namespace ViExtras
                     new[] { typeof(string), typeof(bool), typeof(bool) }, null);
                 return m != null && m.ReturnType.FullName == "GTA.UI.FeedPost";
             }
-            catch { return true; }
+            catch
+            {
+                // Fail closed: if reflection cannot verify the method, use the native feed
+                // fallback rather than letting GTA6Hud call a possibly missing API.
+                return false;
+            }
         }
 
         private bool Look(object hud)
